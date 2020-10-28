@@ -19,5 +19,13 @@ public class Tester {
         System.out.println(mine.toString()); // 1134978\t40.0
         System.out.println(mine.withdraw(40.0)); // true
         System.out.println(mine.toString()); // 1134978\t0.0
+
+        // Test invalid cases
+        System.out.println(mine.deposit(-20.0)); // false
+        System.out.println(mine.getBalance()); // 0.0
+        mine.deposit(80.0);
+        System.out.println(mine.withdraw(-20.0)); // false
+        System.out.println(mine.withdraw(100.0)); // false
+        System.out.println(mine.getBalance()); // 80.0
     }
 }
