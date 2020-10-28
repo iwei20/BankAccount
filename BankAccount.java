@@ -8,5 +8,8 @@ public class BankAccount {
         this.accountID = accountID;
         this.password = password;
     }
-    
+
+    public int getAccountID() {
+        return accountID;
+    }
 }
