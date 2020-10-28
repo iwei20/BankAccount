@@ -12,8 +12,12 @@ public class BankAccount {
     public double getBalance() {
         return balance;
     }
-    
+
     public int getAccountID() {
         return accountID;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
