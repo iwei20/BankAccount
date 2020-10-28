@@ -20,4 +20,12 @@ public class BankAccount {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public boolean deposit(double amount) {
+        if(amount >= 0) {
+            balance += amount;
+            return true;
+        }
+        return false;
+    }
 }
